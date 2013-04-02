@@ -1,0 +1,8 @@
+<!-- Build1 derps -->
+<manifest>
+	<remove-project name="platform/prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6" />
+	<project	path="prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6" 
+			name="djpbx/prebuilts_gcc_linux-x86_host_i686-linux-glibc2.7-4.6" 
+			remote="aokp" 
+			revision="jb4.2"/>
+</manifest>

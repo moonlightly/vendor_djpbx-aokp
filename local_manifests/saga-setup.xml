@@ -1,0 +1,49 @@
+<!-- HTC Desire S device setup -->
+<manifest>
+	<!-- Remote setup -->
+	<remote name="github" fetch="https://github.com/" />
+
+	<!-- Remove bad repos -->
+	<remove-project name="CyanogenMod/android_hardware_qcom_gps" />
+	<remove-project name="CyanogenMod/android_device_common" />
+	<remove-project name="CyanogenMod/android_hardware_qcom_display" />
+	<remove-project name="CyanogenMod/android_hardware_qcom_audio" />
+	<remove-project name="CyanogenMod/android_hardware_qcom_media" />
+	<remove-project name="CyanogenMod/android_hardware_msm7k" />
+	<remove-project name="CyanogenMod/android_hardware_qcom_audio-caf" />
+	<remove-project name="CyanogenMod/android_hardware_qcom_display-caf" />
+	<remove-project name="AOKP/frameworks_base" />
+	<remove-project name="AOKP/frameworks_native" />
+
+	<!-- Add good repos -->
+	<project path="device/common" name="Andromadus/android_device_common" 
+		remote="github" revision="cm10.1" />
+  	<project path="device/htc/saga" name="Andromadus/android_device_htc_saga" 
+		remote="github" revision="cm10.1" />
+  	<project path="vendor/htc/saga" name="Andromadus/proprietary_htc_saga" 
+		remote="github" revision="jb4.2" />
+  	<project path="device/htc/common" name="Andromadus/android_device_htc_common" 
+		remote="github" revision="jb" />
+ 	<project path="device/htc/msm7x30-common" 
+		name="Andromadus/android_device_htc_msm7x30-common" 
+		remote="github" revision="cm10.1" />
+	<project path="kernel/htc/msm7x30-3.0" name="Andromadus/htc7x30-3.0" 
+		remote="github" revision="andromadus" />
+ 	<project path="prebuilts/gcc/linux-x86/arm/arm-eabi-linaro-4.7" 
+		name="Andromadus/android_prebuilts_gcc_linux-x86_arm_arm-eabi-linaro-4.7" 
+		remote="github" revision="jellybean" />
+	<project path="hardware/qcom/gps" name="CyanogenMod/android_hardware_qcom_gps"
+		remote="github" revision="jellybean" />
+ 	<project path="hardware/qcom/librpc" name="Andromadus/android_hardware_qcom_librpc"
+		remote="github" revision="jellybean" />
+  	<project path="hardware/qcom/display" name="Andromadus/android_hardware_qcom_display" 
+		remote="github" revision="jb4.2" />
+  	<project path="hardware/qcom/audio" name="Andromadus/android_hardware_qcom_audio" 
+		remote="github" revision="Andro4.2" />
+  	<project path="hardware/qcom/media" name="Andromadus/android_hardware_qcom_media" 
+		remote="github" revision="jb4.2" />
+	<project path="frameworks/av" name="Andromadus/android_frameworks_av" 
+		remote="github" revision="jb4.2" />
+	<project path="frameworks/native" name="Andromadus/android_frameworks_native" 
+		remote="github" revision="jb4.2" />
+</manifest>
